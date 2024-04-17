@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Magic Image</title>
+        <style>
+            body {
+                background-color: white;
+                text-align: center;
+            }
+
+            .body-dark {
+                background-color: black;
+                color: white;
+            }
+
+            img {
+                width: 534px;
+                height: 356px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Magic Image</h1>
+        <br/>
+        <img src="images/magic.png" alt="Magic Image">
+        <br/>
+        <button onclick="changeBackground()">Change Background</button>
+        <script>
+            function changeBackground() {
+                var body = document.querySelector("body");
+                if (body.className === 'body-dark') {
+                    body.className = '';
+                } else {
+                    body.className = 'body-dark';
+                }
+            }
+        </script>
+    </body>
+</html>
